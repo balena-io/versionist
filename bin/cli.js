@@ -100,6 +100,18 @@ const argv = yargs
     }
   })
   .options({
+    patch: {
+      describe: 'increment semver patch version',
+      boolean: true
+    },
+    minor: {
+      describe: 'increment semver minor version',
+      boolean: true
+    },
+    major: {
+      describe: 'increment semver major version',
+      boolean: true
+    },
     current: {
       describe: 'set current version',
       string: true,
@@ -222,6 +234,17 @@ async.waterfall([
   },
 
   (currentVersion, documentedVersions, history, callback) => {
+    if (argv.patch || argv.minor || argv.major) {
+      argv.configuration.getIncrementLevelFromCommit = () => {
+        if (argv.major) {
+          return 'major';
+        } else if (argv.minor) {
+          return 'minor';
+        } else if (argv.patch) {
+          return 'patch';
+        }
+      };
+    }
     const version = versionist.calculateNextVersion(history, {
       getIncrementLevelFromCommit: argv.configuration.getIncrementLevelFromCommit,
       currentVersion: currentVersion,
