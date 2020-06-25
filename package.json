@@ -46,7 +46,7 @@
     "@types/semver": "^6.0.0",
     "async": "^2.0.0-rc.6",
     "chalk": "^1.1.3",
-    "debug": "2.5.1",
+    "debug": "2.6.9",
     "handlebars": "^4.1.2",
     "handlebars-helpers": "^0.10.0",
     "js-yaml": "^3.13.1",
