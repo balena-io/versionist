@@ -1,6 +1,6 @@
 {
   "name": "versionist",
-  "version": "6.1.1",
+  "version": "6.1.2",
   "main": "bin/versionist.js",
   "description": "Flexible CHANGELOG generation toolkit that adapts to your commit conventions",
   "homepage": "https://github.com/balena-io/versionist",
