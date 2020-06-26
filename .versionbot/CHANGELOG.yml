@@ -1,4 +1,14 @@
 - commits:
+    - subject: 'Update dependencies, fixing some warnings'
+      hash: d9fa17f7c3ee3063c49e93bbe3b997032f75e6ad
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+  version: 6.1.2
+  date: 2020-06-26T08:22:23.268Z
+- commits:
     - subject: Remove issues call to action
       hash: f92c8f0b53c0173b177539c34efb727c61308e47
       body: ''
@@ -655,14 +665,14 @@
       footers:
         change-type: patch
       hash: 56ed543a1c6824d408692f6b1efa0d3f9beb4aab
-      subject: Only output stack trace in debug mode. (#63)
+      subject: 'Only output stack trace in debug mode. (#63)'
   date: '2017-01-03T20:14:20Z'
   version: 2.8.0
 - commits:
     - author: gaudi
       body: 'Connects to #58.'
       hash: 617248703d07650b710481a50b0cdef4f71005b6
-      subject: Default to internal versionist.conf.js if none is passed (#58)
+      subject: 'Default to internal versionist.conf.js if none is passed (#58)'
   date: '2016-12-20T09:50:38Z'
   version: 2.7.0
 - commits:
